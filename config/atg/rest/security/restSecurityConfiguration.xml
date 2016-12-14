@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE rest-security
+        PUBLIC "-//Art Technology Group, Inc.//DTD REST Filtering Configuration//EN"
+        "http://www.atg.com/dtds/rest/restSecurity_1.0.dtd">
+
+<rest-security>.gi
+	<resource component="/gd/rest/ItemsRest">
+		<method name="getItems" secure="false"/>
+		<method name="getItemsAsCommerceItems" secure="false"/>
+		<method name="addItem" secure="false"/>
+	</resource>
+
+	<resource component="/gd/rest/LoginRest">
+		<method name="login" secure="false"/>
+		<method name="logout" secure="false"/>
+	</resource>
+
+</rest-security>
